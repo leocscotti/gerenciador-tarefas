@@ -142,7 +142,7 @@ Body:
 
 ```json
 {
-    "nome": "João da Silva"
+    "nome": "trabalho"
 }
 ```
 
@@ -186,8 +186,8 @@ Body:
 
 ```json
 {
-    "titulo": "João da Silva",
-    "descricao": "joao.silva@example.com",
+    "titulo": "projeto task manager",
+    "descricao": "desenvolver projeto de gerenciador de tarefas",
     "prioridade": "ALTA",
     "usuarioId": 1,
     "categoriaId": 1
@@ -216,8 +216,8 @@ Body:
 
 ```json
 {
-    "titulo": "João da Silva",
-    "descricao": "joao.silva@example.com",
+     "titulo": "projeto task manager",
+    "descricao": "desenvolver projeto de gerenciador de tarefas",
     "prioridade": "ALTA",
     "usuarioId": 1,
     "categoriaId": 1

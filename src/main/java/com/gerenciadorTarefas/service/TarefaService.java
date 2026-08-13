@@ -65,6 +65,7 @@ public class TarefaService {
         tarefa.setTitulo(dto.getTitulo());
         tarefa.setDescricao(dto.getDescricao());
         tarefa.setPrioridade(dto.getPrioridade());
+        tarefa.setStatus(dto.getStatus());
         tarefa.setPrazo(dto.getPrazo());
         tarefa.setUsuario(usuario);
         tarefa.setCategoria(categoria);

@@ -25,7 +25,8 @@ public class Tarefa {
     @Enumerated(EnumType.STRING)
     private Prioridade prioridade;
 
-    private Boolean concluida = false;
+    @Enumerated(EnumType.STRING)
+    private StatusTarefa status;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();

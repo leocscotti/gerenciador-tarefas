@@ -5,10 +5,6 @@ import com.gerenciadorTarefas.dto.response.TarefaResponse;
 import com.gerenciadorTarefas.models.Tarefa;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDate;
-
-import static java.time.LocalDate.now;
-
 @Component
 public class TarefaMapper {
 
@@ -17,6 +13,7 @@ public class TarefaMapper {
         t.setTitulo(dto.getTitulo());
         t.setDescricao(dto.getDescricao());
         t.setPrioridade(dto.getPrioridade());
+        t.setStatus(dto.getStatus());
         t.setPrazo(dto.getPrazo());
         return t;
     }
@@ -27,7 +24,7 @@ public class TarefaMapper {
                 t.getTitulo(),
                 t.getDescricao(),
                 t.getPrioridade(),
-                t.getConcluida(),
+                t.getStatus(),
                 t.getDataCriacao(),
                 t.getPrazo(),
                 t.getUsuario().getNome(),

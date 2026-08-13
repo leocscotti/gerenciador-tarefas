@@ -1,8 +1,12 @@
 package com.gerenciadorTarefas.dto.response;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.gerenciadorTarefas.models.Prioridade;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -13,6 +17,8 @@ public class TarefaResponse {
     private String descricao;
     private Prioridade prioridade;
     private Boolean concluida;
+    private LocalDate dataCriacao;
+    private LocalDateTime prazo;
     private String nomeUsuario;
     private String nomeCategoria;
 }

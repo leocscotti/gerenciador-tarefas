@@ -189,18 +189,22 @@ Body:
     "titulo": "projeto task manager",
     "descricao": "desenvolver projeto de gerenciador de tarefas",
     "prioridade": "ALTA",
+    "status": "EM_ANDAMENTO",
+    "prazo": "22/10/2026 23:59:59",
     "usuarioId": 1,
     "categoriaId": 1
 }
 ```
 
-| Parâmetro | Tipo     | Descrição                       |
-|:----------|:---------|:--------------------------------|
-| `titulo`    | `String` | Titulo da tarefa a ser criada  |
-| `descricao`   | `String` | Descrição da tarefa a ser criada |
-| `prioridade`    | `String` | Prioridade da tarefa a ser criada  |
-| `usuarioId`   | `String` | ID do usuario no qual a tarefa a ser criada será atribuida |
-| `categoriaId`    | `String` | ID da categoria na qual a tarefa a ser criada será atribuida  |
+| Parâmetro     | Tipo            | Descrição                                                    |
+|:--------------|:----------------|:-------------------------------------------------------------|
+| `titulo`      | `String`        | Titulo da tarefa a ser criada                                |
+| `descricao`   | `String`        | Descrição da tarefa a ser criada                             |
+| `prioridade`  | `String`        | Prioridade da tarefa a ser criada                            |
+| `status`      | `String`        | Status da tarefa a ser criada                                |
+| `prazo`       | `LocalDateTime` | Prazo da tarefa a ser criada                                 |
+| `usuarioId`   | `String`        | ID do usuario no qual a tarefa a ser criada será atribuida   |
+| `categoriaId` | `String`        | ID da categoria na qual a tarefa a ser criada será atribuida |
 
 - #### Atualizar tarefa
 
@@ -216,21 +220,25 @@ Body:
 
 ```json
 {
-     "titulo": "projeto task manager",
+    "titulo": "projeto task manager",
     "descricao": "desenvolver projeto de gerenciador de tarefas",
     "prioridade": "ALTA",
+    "status": "EM_ANDAMENTO",
+    "prazo": "22/10/2026 23:59:59",
     "usuarioId": 1,
     "categoriaId": 1
 }
 ```
 
-| Parâmetro | Tipo     | Descrição                       |
-|:----------|:---------|:--------------------------------|
-| `titulo`    | `String` | Titulo da tarefa a ser criada  |
-| `descricao`   | `String` | Descrição da tarefa a ser criada |
-| `prioridade`    | `String` | Prioridade da tarefa a ser criada  |
-| `usuarioId`   | `String` | ID do usuario no qual a tarefa a ser criada será atribuida |
-| `categoriaId`    | `String` | ID da categoria na qual a tarefa a ser criada será atribuida  |
+| Parâmetro     | Tipo            | Descrição                                                    |
+|:--------------|:----------------|:-------------------------------------------------------------|
+| `titulo`      | `String`        | Titulo da tarefa a ser criada                                |
+| `descricao`   | `String`        | Descrição da tarefa a ser criada                             |
+| `prioridade`  | `String`        | Prioridade da tarefa a ser criada                            |
+| `status`      | `String`        | Status da tarefa a ser criada                                |
+| `prazo`       | `LocalDateTime` | Prazo da tarefa a ser criada                                 |
+| `usuarioId`   | `String`        | ID do usuario no qual a tarefa a ser criada será atribuida   |
+| `categoriaId` | `String`        | ID da categoria na qual a tarefa a ser criada será atribuida |
 
 - #### Excluir tarefa 
 
